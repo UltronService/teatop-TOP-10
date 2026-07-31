@@ -273,12 +273,24 @@ body, html {
   background-position: center bottom;
 }
 
-.R07Cname::after, .R10Cname::after {
+.R10Cname::after {
   content: "";
   display: inline-block;
   width: 8%;
   height: 1.6vw;
   background-image: url(https://i.imgur.com/2iKWyLF.png);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  margin-left: 3px;
+  background-position: center bottom;
+}
+
+.R07Cname::after {
+  content: "";
+  display: inline-block;
+  width: 8%;
+  height: 1.6vw;
+  background-color: rgb(138, 184, 186);
   background-size: 80%;
   background-repeat: no-repeat;
   margin-left: 3px;
