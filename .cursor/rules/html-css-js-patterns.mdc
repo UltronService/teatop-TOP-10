@@ -1,0 +1,89 @@
+---
+description: HTML/CSS/JS 編碼模式與最佳實踐
+globs: "**/*.{html,css,js}"
+alwaysApply: false
+---
+
+# HTML / CSS / JS 編碼模式
+
+## HTML
+
+- 保持現有結構：部分類名是中文，修改時避免重構
+- 更新文本內容時，檢查是否同時需要更新 CSS 或 JS 選擇器
+- 新增元素必須同步 CSS + JS（否則動畫會失效）
+
+## CSS
+
+### 動畫
+
+所有 TOP 元素動畫遵循序列：
+
+| TOP | 開始時間 | 持續時間 | 結束時間 |
+|-----|---------|---------|---------|
+| 1 | 0s | 5s | 5s |
+| 2 | 5.5s | 5s | 10.5s |
+| 3 | 11s | 5s | 16s |
+| 4 | 16.5s | 5s | 21.5s |
+| 5 | 22s | 5s | 27s |
+
+修改任何時間前，更新此表。
+
+### 配色
+
+- 主色（橙色）：`#ec6f09`
+- 淺橙：`#f08c3a`
+- 深藍：`#0c2f54`
+- 灰藍：`#3d5976`
+
+若需修改，保持對比度 >= 4.5:1（WCAG AA）。
+
+## JavaScript
+
+### 選擇器策略
+
+用 `.querySelector()` 查詢特定類名，避免迴圈或遞歸。
+
+```javascript
+// ✅ 好：直接查詢
+document.querySelector('.Ltop01').style.animation = '...';
+
+// ❌ 壞：遍歷所有元素後再篩選
+document.querySelectorAll('h1').forEach(el => {
+  if (el.classList.contains('Ltop01')) { ... }
+});
+```
+
+### 動畫重置邏輯
+
+監聽 `.L05Ename` 的 `fadeOut` 動畫結束事件，觸發全元素重置。延遲 500ms 避免閃爍。
+
+```javascript
+document.querySelector('.L05Ename').addEventListener('animationend', (event) => {
+  if (event.animationName === "fadeOut") {
+    setTimeout(() => {
+      // 全元素重置邏輯
+    }, 500);
+  }
+});
+```
+
+### 新增元素時
+
+1. 在 `script.js` 中複製對應的 querySelector + style.animation 行
+2. 更新 TOP 編號與時間序列
+3. 測試一個完整循環（~27 秒）確認無誤
+
+## 常見錯誤
+
+| 錯誤 | 後果 | 修正 |
+|------|------|------|
+| 只改 HTML，忘記改 CSS 時間 | 動畫錯位 | 檢查 3 處同步 |
+| HTML 類名改了，JS 選擇器沒改 | 元素無動畫 | 搜尋類名確保全匹配 |
+| 新增 TOP6+ 但忘記改重置邏輯 | 循環時卡頓 | 檢查 script.js 是否包含新元素 |
+| CDN 圖片連結失效 | 飲品圖片不顯示 | 檢查 Imgur 連結或上傳新圖 |
+
+## 調試提示
+
+- 用瀏覽器開發者工具 F12，Animations 面板查看動畫時序
+- 在 Console 檢查 `.offsetWidth` 觸發的重排
+- 逐秒播放動畫確認每個元素進入 / 退出時間
