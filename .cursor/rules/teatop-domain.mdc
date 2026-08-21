@@ -1,0 +1,83 @@
+---
+description: Teatop 品牌數據與業務邏輯
+alwaysApply: true
+---
+
+# Teatop 業務域規則
+
+## 品牌背景
+
+- **品牌**：Teatop 茶飲連鎖
+- **主要商品**：台灣烏龍茶、鮮奶茶飲、水果茶等
+- **展示目的**：門市 TOP10 熱銷飲品排行（供店內展示或行銷用）
+
+## TOP 10 飲品清單（當前資料）
+
+| 排名 | 中文名 | 英文名 | 價格 (L) |
+|------|--------|---------|----------|
+| 1 | 招牌高山青 | Taiwan Light Oolong Tea | $40 |
+| 2 | 108茶王 | 108 Roasted Oolong Tea | $50 |
+| 3 | 青茶3Q | Light Oolong Tea w/ Bubble, Coconut Jelly & Green Tea Jelly | $55 |
+| 4 | 黑糖珍珠鮮奶 | Brown Sugar Fresh Milk with Bubble | $85 |
+| 5 | 當代雙Q | Bubble Milk Tea with Taro Balls | $70 |
+| 6 | 桂花凍108 | 108 Roasted Oolong with Osmanthus Jelly | $70 |
+| 7 | 柳橙綠 | Fresh Orange Green Tea | $75 |
+| 8 | 轟蜜茶108 | Honey 108 Roasted Oolong Tea with Tea Jelly | $70 |
+| 9 | 紅豆粉粿鮮奶 | Brown Sugar Fresh Milk with Red Bean & Jelly | $95 |
+| 10 | 百香QQ | Passion Fruit Green Tea with Bubble & Coconut Jelly | $80 |
+
+## 修改時的檢查清單
+
+修改飲品資料時（名稱、價格、順序），確保以下 3 處同時更新：
+
+1. **HTML index.html**
+   - 左側 TOP1~5：`.L01 ~ .L05` 中的 `.LCname`、`.LEname`
+   - 右側 TOP1~10：`.Rrow01 ~ .Rrow10` 中的 `.RCname`、`.REname`、`.Rprice`
+
+2. **CSS style.css**
+   - 若改變順序：檢查 TOP 對應的背景色是否邏輯正確
+   - TOP 1/3/5 及其他偶數行的背景色定義（.Rrow01 → .Rrow10）
+
+3. **JavaScript script.js**
+   - 對應 TOP 的選擇器與動畫時間是否一致
+
+## 語言約定
+
+- **UI 文本**：繁體中文（飲品名稱、描述）
+- **程式碼註解**：繁體中文（解釋業務邏輯）
+- **HTML/CSS/JS 標識符**：英文（類名、變數名）
+
+## 常見業務場景
+
+### 情景 1：新飲品上市，插入 TOP3
+
+1. 原 TOP3 ~ TOP10 順序往下移
+2. HTML 重新編號（TOP3 → TOP4，以此類推）
+3. CSS 新增 `.Rrow11` 樣式（若超過 10 件）
+4. JS script.js 新增 TOP11 的選擇器與動畫
+5. 動畫時間序列整體右移
+
+### 情景 2：停售飲品，刪除 TOP7
+
+1. 刪除 HTML 中 `.Rrow07` 區塊
+2. TOP8~10 往上遞補（.Rrow08 → .Rrow07，以此類推）
+3. CSS 中刪除 `.Rrow08 ~ .Rrow10` 的定義，改為 `.Rrow07 ~ .Rrow09`
+4. JS script.js 同步更新
+
+### 情景 3：只改價格，無排名變化
+
+1. 僅修改 HTML 中的 `.Rprice` 文本
+2. CSS / JS 無需改動
+
+## 部署與展示
+
+- 當前無自動化流程，手動拖到門市展示或上傳至靜態服務器
+- 支援的瀏覽器：Chrome / Safari / Firefox（需支援 CSS animation）
+- 響應式：使用 `clamp()` 單位，適應不同螢幕尺寸
+
+## 未來擴展空間
+
+- 連接 POS 系統動態更新 TOP 10 排名
+- 新增移動設備適配（平板菜單展示）
+- 多語言支持（英文、日文等）
+- A/B 測試不同配色或動畫速度
