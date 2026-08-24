@@ -530,153 +530,213 @@ body, html {
   }
 }
 .Ltop01 {
-  -webkit-animation: slideIn 0.5s 1 linear 0s forwards, slideOut 0.5s 1 linear 5s forwards;
-          animation: slideIn 0.5s 1 linear 0s forwards, slideOut 0.5s 1 linear 5s forwards;
+  -webkit-animation: slideIn 0.5s linear 0s forwards, slideOut 0.5s linear 5s forwards;
+          animation: slideIn 0.5s linear 0s forwards, slideOut 0.5s linear 5s forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .Ltea01 {
-  -webkit-animation: rotate01 1s 1 ease-out 0s forwards, rotate02 1s 1 ease-out 5s forwards;
-          animation: rotate01 1s 1 ease-out 0s forwards, rotate02 1s 1 ease-out 5s forwards;
+  -webkit-animation: rotate01 1s ease-out 0s forwards, rotate02 1s ease-out 5s forwards;
+          animation: rotate01 1s ease-out 0s forwards, rotate02 1s ease-out 5s forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .Lleaf01 {
-  -webkit-animation: drop 0.5s 1 ease-in 1s forwards, float04 1s infinite linear 1.5s, fadeOut 0.1s 1 linear 4.9s forwards;
-          animation: drop 0.5s 1 ease-in 1s forwards, float04 1s infinite linear 1.5s, fadeOut 0.1s 1 linear 4.9s forwards;
+  -webkit-animation: drop 0.5s ease-in 1s forwards, float04 1s infinite linear 1.5s, fadeOut 0.1s linear 4.9s forwards;
+          animation: drop 0.5s ease-in 1s forwards, float04 1s infinite linear 1.5s, fadeOut 0.1s linear 4.9s forwards;
+  animation-iteration-count: infinite, infinite, infinite;
+  animation-duration: 27s, 27s, 27s;
 }
 
 .Rleaf01 {
-  -webkit-animation: drop 0.5s 1 ease-in 1s forwards, float03 1s infinite linear 1.5s, fadeOut 0.1s 1 linear 4.9s forwards;
-          animation: drop 0.5s 1 ease-in 1s forwards, float03 1s infinite linear 1.5s, fadeOut 0.1s 1 linear 4.9s forwards;
+  -webkit-animation: drop 0.5s ease-in 1s forwards, float03 1s infinite linear 1.5s, fadeOut 0.1s linear 4.9s forwards;
+          animation: drop 0.5s ease-in 1s forwards, float03 1s infinite linear 1.5s, fadeOut 0.1s linear 4.9s forwards;
+  animation-iteration-count: infinite, infinite, infinite;
+  animation-duration: 27s, 27s, 27s;
 }
 
 .L01Cname {
-  -webkit-animation: fadeIn 0.3s 1 linear 1.7s forwards, fadeOut 0.3s 1 linear 4.7s forwards;
-          animation: fadeIn 0.3s 1 linear 1.7s forwards, fadeOut 0.3s 1 linear 4.7s forwards;
+  -webkit-animation: fadeIn 0.3s linear 1.7s forwards, fadeOut 0.3s linear 4.7s forwards;
+          animation: fadeIn 0.3s linear 1.7s forwards, fadeOut 0.3s linear 4.7s forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .L01Ename {
-  -webkit-animation: fadeIn 0.3s 1 linear 2s forwards, fadeOut 0.3s 1 linear 5s forwards;
-          animation: fadeIn 0.3s 1 linear 2s forwards, fadeOut 0.3s 1 linear 5s forwards;
+  -webkit-animation: fadeIn 0.3s linear 2s forwards, fadeOut 0.3s linear 5s forwards;
+          animation: fadeIn 0.3s linear 2s forwards, fadeOut 0.3s linear 5s forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .Ltop02 {
-  -webkit-animation: slideIn 0.5s 1 linear 5.5s forwards, slideOut 0.5s 1 linear 10.5s forwards;
-          animation: slideIn 0.5s 1 linear 5.5s forwards, slideOut 0.5s 1 linear 10.5s forwards;
+  -webkit-animation: slideIn 0.5s linear 5.5s forwards, slideOut 0.5s linear 10.5s forwards;
+          animation: slideIn 0.5s linear 5.5s forwards, slideOut 0.5s linear 10.5s forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .Ltea02 {
-  -webkit-animation: rotate01 1s 1 ease-out 5.5s forwards, rotate02 1s 1 ease-out 10.5s forwards;
-          animation: rotate01 1s 1 ease-out 5.5s forwards, rotate02 1s 1 ease-out 10.5s forwards;
+  -webkit-animation: rotate01 1s ease-out 5.5s forwards, rotate02 1s ease-out 10.5s forwards;
+          animation: rotate01 1s ease-out 5.5s forwards, rotate02 1s ease-out 10.5s forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .Lleaf02 {
-  -webkit-animation: drop 0.5s 1 ease-in 6.5s forwards, float03 1s infinite linear 7s, fadeOut 0.1s 1 linear 10.4s forwards;
-          animation: drop 0.5s 1 ease-in 6.5s forwards, float03 1s infinite linear 7s, fadeOut 0.1s 1 linear 10.4s forwards;
+  -webkit-animation: drop 0.5s ease-in 6.5s forwards, float03 1s infinite linear 7s, fadeOut 0.1s linear 10.4s forwards;
+          animation: drop 0.5s ease-in 6.5s forwards, float03 1s infinite linear 7s, fadeOut 0.1s linear 10.4s forwards;
+  animation-iteration-count: infinite, infinite, infinite;
+  animation-duration: 27s, 27s, 27s;
 }
 
 .Rleaf02 {
-  -webkit-animation: drop 0.5s 1 ease-in 6.5s forwards, float04 1s infinite linear 7s, fadeOut 0.1s 1 linear 10.4s forwards;
-          animation: drop 0.5s 1 ease-in 6.5s forwards, float04 1s infinite linear 7s, fadeOut 0.1s 1 linear 10.4s forwards;
+  -webkit-animation: drop 0.5s ease-in 6.5s forwards, float04 1s infinite linear 7s, fadeOut 0.1s linear 10.4s forwards;
+          animation: drop 0.5s ease-in 6.5s forwards, float04 1s infinite linear 7s, fadeOut 0.1s linear 10.4s forwards;
+  animation-iteration-count: infinite, infinite, infinite;
+  animation-duration: 27s, 27s, 27s;
 }
 
 .L02Cname {
-  -webkit-animation: fadeIn 0.3s 1 linear 7.2s forwards, fadeOut 0.3s 1 linear 10.2s forwards;
-          animation: fadeIn 0.3s 1 linear 7.2s forwards, fadeOut 0.3s 1 linear 10.2s forwards;
+  -webkit-animation: fadeIn 0.3s linear 7.2s forwards, fadeOut 0.3s linear 10.2s forwards;
+          animation: fadeIn 0.3s linear 7.2s forwards, fadeOut 0.3s linear 10.2s forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .L02Ename {
-  -webkit-animation: fadeIn 0.3s 1 linear 7.5s forwards, fadeOut 0.3s 1 linear 10.5s forwards;
-          animation: fadeIn 0.3s 1 linear 7.5s forwards, fadeOut 0.3s 1 linear 10.5s forwards;
+  -webkit-animation: fadeIn 0.3s linear 7.5s forwards, fadeOut 0.3s linear 10.5s forwards;
+          animation: fadeIn 0.3s linear 7.5s forwards, fadeOut 0.3s linear 10.5s forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .Ltop03 {
-  -webkit-animation: slideIn 0.5s 1 linear 11s forwards, slideOut 0.5s 1 linear 16s forwards;
-          animation: slideIn 0.5s 1 linear 11s forwards, slideOut 0.5s 1 linear 16s forwards;
+  -webkit-animation: slideIn 0.5s linear 11s forwards, slideOut 0.5s linear 16s forwards;
+          animation: slideIn 0.5s linear 11s forwards, slideOut 0.5s linear 16s forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .Ltea03 {
-  -webkit-animation: rotate01 1s 1 ease-out 11s forwards, rotate02 1s 1 ease-out 16s forwards;
-          animation: rotate01 1s 1 ease-out 11s forwards, rotate02 1s 1 ease-out 16s forwards;
+  -webkit-animation: rotate01 1s ease-out 11s forwards, rotate02 1s ease-out 16s forwards;
+          animation: rotate01 1s ease-out 11s forwards, rotate02 1s ease-out 16s forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .Lleaf03 {
-  -webkit-animation: drop 0.5s 1 ease-in 12s forwards, float04 1s infinite linear 12.5s, fadeOut 0.1s 1 linear 15.9s forwards;
-          animation: drop 0.5s 1 ease-in 12s forwards, float04 1s infinite linear 12.5s, fadeOut 0.1s 1 linear 15.9s forwards;
+  -webkit-animation: drop 0.5s ease-in 12s forwards, float04 1s infinite linear 12.5s, fadeOut 0.1s linear 15.9s forwards;
+          animation: drop 0.5s ease-in 12s forwards, float04 1s infinite linear 12.5s, fadeOut 0.1s linear 15.9s forwards;
+  animation-iteration-count: infinite, infinite, infinite;
+  animation-duration: 27s, 27s, 27s;
 }
 
 .Rleaf03 {
-  -webkit-animation: drop 0.5s 1 ease-in 12s forwards, float03 1s infinite linear 12.5s, fadeOut 0.1s 1 linear 15.9s forwards;
-          animation: drop 0.5s 1 ease-in 12s forwards, float03 1s infinite linear 12.5s, fadeOut 0.1s 1 linear 15.9s forwards;
+  -webkit-animation: drop 0.5s ease-in 12s forwards, float03 1s infinite linear 12.5s, fadeOut 0.1s linear 15.9s forwards;
+          animation: drop 0.5s ease-in 12s forwards, float03 1s infinite linear 12.5s, fadeOut 0.1s linear 15.9s forwards;
+  animation-iteration-count: infinite, infinite, infinite;
+  animation-duration: 27s, 27s, 27s;
 }
 
 .L03Cname {
-  -webkit-animation: fadeIn 0.3s 1 linear 12.7s forwards, fadeOut 0.3s 1 linear 15.7s forwards;
-          animation: fadeIn 0.3s 1 linear 12.7s forwards, fadeOut 0.3s 1 linear 15.7s forwards;
+  -webkit-animation: fadeIn 0.3s linear 12.7s forwards, fadeOut 0.3s linear 15.7s forwards;
+          animation: fadeIn 0.3s linear 12.7s forwards, fadeOut 0.3s linear 15.7s forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .L03Ename {
-  -webkit-animation: fadeIn 0.3s 1 linear 13s forwards, fadeOut 0.3s 1 linear 16s forwards;
-          animation: fadeIn 0.3s 1 linear 13s forwards, fadeOut 0.3s 1 linear 16s forwards;
+  -webkit-animation: fadeIn 0.3s linear 13s forwards, fadeOut 0.3s linear 16s forwards;
+          animation: fadeIn 0.3s linear 13s forwards, fadeOut 0.3s linear 16s forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .Ltop04 {
-  -webkit-animation: slideIn 0.5s 1 linear 16.5s forwards, slideOut 0.5s 1 linear 21.5s forwards;
-          animation: slideIn 0.5s 1 linear 16.5s forwards, slideOut 0.5s 1 linear 21.5s forwards;
+  -webkit-animation: slideIn 0.5s linear 16.5s forwards, slideOut 0.5s linear 21.5s forwards;
+          animation: slideIn 0.5s linear 16.5s forwards, slideOut 0.5s linear 21.5s forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .Ltea04 {
-  -webkit-animation: rotate01 1s 1 ease-out 16.5s forwards, rotate02 1s 1 ease-out 21.5s forwards;
-          animation: rotate01 1s 1 ease-out 16.5s forwards, rotate02 1s 1 ease-out 21.5s forwards;
+  -webkit-animation: rotate01 1s ease-out 16.5s forwards, rotate02 1s ease-out 21.5s forwards;
+          animation: rotate01 1s ease-out 16.5s forwards, rotate02 1s ease-out 21.5s forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .Lleaf04 {
-  -webkit-animation: drop 0.5s 1 ease-in 17.5s forwards, float04 1s infinite linear 18s, fadeOut 0.1s 1 linear 21.4s forwards;
-          animation: drop 0.5s 1 ease-in 17.5s forwards, float04 1s infinite linear 18s, fadeOut 0.1s 1 linear 21.4s forwards;
+  -webkit-animation: drop 0.5s ease-in 17.5s forwards, float04 1s infinite linear 18s, fadeOut 0.1s linear 21.4s forwards;
+          animation: drop 0.5s ease-in 17.5s forwards, float04 1s infinite linear 18s, fadeOut 0.1s linear 21.4s forwards;
+  animation-iteration-count: infinite, infinite, infinite;
+  animation-duration: 27s, 27s, 27s;
 }
 
 .Rleaf04 {
-  -webkit-animation: drop 0.5s 1 ease-in 17.5s forwards, float03 1s infinite linear 18s, fadeOut 0.1s 1 linear 21.4s forwards;
-          animation: drop 0.5s 1 ease-in 17.5s forwards, float03 1s infinite linear 18s, fadeOut 0.1s 1 linear 21.4s forwards;
+  -webkit-animation: drop 0.5s ease-in 17.5s forwards, float03 1s infinite linear 18s, fadeOut 0.1s linear 21.4s forwards;
+          animation: drop 0.5s ease-in 17.5s forwards, float03 1s infinite linear 18s, fadeOut 0.1s linear 21.4s forwards;
+  animation-iteration-count: infinite, infinite, infinite;
+  animation-duration: 27s, 27s, 27s;
 }
 
 .L04Cname {
-  -webkit-animation: fadeIn 0.3s 1 linear 18.2s forwards, fadeOut 0.3s 1 linear 21.2s forwards;
-          animation: fadeIn 0.3s 1 linear 18.2s forwards, fadeOut 0.3s 1 linear 21.2s forwards;
+  -webkit-animation: fadeIn 0.3s linear 18.2s forwards, fadeOut 0.3s linear 21.2s forwards;
+          animation: fadeIn 0.3s linear 18.2s forwards, fadeOut 0.3s linear 21.2s forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .L04Ename {
-  -webkit-animation: fadeIn 0.3s 1 linear 18.5s forwards, fadeOut 0.3s 1 linear 21.5s forwards;
-          animation: fadeIn 0.3s 1 linear 18.5s forwards, fadeOut 0.3s 1 linear 21.5s forwards;
+  -webkit-animation: fadeIn 0.3s linear 18.5s forwards, fadeOut 0.3s linear 21.5s forwards;
+          animation: fadeIn 0.3s linear 18.5s forwards, fadeOut 0.3s linear 21.5s forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .Ltop05 {
-  -webkit-animation: slideIn 0.5s 1 linear 22s forwards, slideOut 0.5s 1 linear 27s forwards;
-          animation: slideIn 0.5s 1 linear 22s forwards, slideOut 0.5s 1 linear 27s forwards;
+  -webkit-animation: slideIn 0.5s linear 22s forwards, slideOut 0.5s linear 27s forwards;
+          animation: slideIn 0.5s linear 22s forwards, slideOut 0.5s linear 27s forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .Ltea05 {
-  -webkit-animation: rotate01 1s 1 ease-out 22s forwards, rotate02 1s 1 ease-out 27s forwards;
-          animation: rotate01 1s 1 ease-out 22s forwards, rotate02 1s 1 ease-out 27s forwards;
+  -webkit-animation: rotate01 1s ease-out 22s forwards, rotate02 1s ease-out 27s forwards;
+          animation: rotate01 1s ease-out 22s forwards, rotate02 1s ease-out 27s forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .Lleaf05 {
-  -webkit-animation: drop 0.5s 1 ease-in 23s forwards, float03 1s infinite linear 23.5s, fadeOut 0.1s 1 linear 26.9s forwards;
-          animation: drop 0.5s 1 ease-in 23s forwards, float03 1s infinite linear 23.5s, fadeOut 0.1s 1 linear 26.9s forwards;
+  -webkit-animation: drop 0.5s ease-in 23s forwards, float03 1s infinite linear 23.5s, fadeOut 0.1s linear 26.9s forwards;
+          animation: drop 0.5s ease-in 23s forwards, float03 1s infinite linear 23.5s, fadeOut 0.1s linear 26.9s forwards;
+  animation-iteration-count: infinite, infinite, infinite;
+  animation-duration: 27s, 27s, 27s;
 }
 
 .Rleaf05 {
-  -webkit-animation: drop 0.5s 1 ease-in 23s forwards, float04 1s infinite linear 23.5s, fadeOut 0.1s 1 linear 26.9s forwards;
-          animation: drop 0.5s 1 ease-in 23s forwards, float04 1s infinite linear 23.5s, fadeOut 0.1s 1 linear 26.9s forwards;
+  -webkit-animation: drop 0.5s ease-in 23s forwards, float04 1s infinite linear 23.5s, fadeOut 0.1s linear 26.9s forwards;
+          animation: drop 0.5s ease-in 23s forwards, float04 1s infinite linear 23.5s, fadeOut 0.1s linear 26.9s forwards;
+  animation-iteration-count: infinite, infinite, infinite;
+  animation-duration: 27s, 27s, 27s;
 }
 
 .L05Cname {
-  -webkit-animation: fadeIn 0.3s 1 linear 23.7s forwards, fadeOut 0.3s 1 linear 26.7s forwards;
-          animation: fadeIn 0.3s 1 linear 23.7s forwards, fadeOut 0.3s 1 linear 26.7s forwards;
+  -webkit-animation: fadeIn 0.3s linear 23.7s forwards, fadeOut 0.3s linear 26.7s forwards;
+          animation: fadeIn 0.3s linear 23.7s forwards, fadeOut 0.3s linear 26.7s forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .L05Ename {
-  -webkit-animation: fadeIn 0.3s 1 linear 24s forwards, fadeOut 0.3s 1 linear 27s forwards;
-          animation: fadeIn 0.3s 1 linear 24s forwards, fadeOut 0.3s 1 linear 27s forwards;
+  -webkit-animation: fadeIn 0.3s linear 24s forwards, fadeOut 0.3s linear 27s forwards;
+          animation: fadeIn 0.3s linear 24s forwards, fadeOut 0.3s linear 27s forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 @-webkit-keyframes bgcolorof {
@@ -777,98 +837,148 @@ body, html {
   }
 }
 .Rrow01 {
-  animation: bgcolorlof 0.1s linear 0.5s 1 forwards, bgcolorof 0.1s linear 5.3s 1 reverse forwards;
+  animation: bgcolorlof 0.1s linear 0.5s forwards, bgcolorof 0.1s linear 5.3s reverse forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 .Rrow01 .large {
-  animation: bgcolorbo 0.1s linear 0.5s 1 forwards, bgcolorbo 0.1s linear 5.3s 1 reverse forwards;
+  animation: bgcolorbo 0.1s linear 0.5s forwards, bgcolorbo 0.1s linear 5.3s reverse forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .Rrow02 {
-  animation: bgcolorlof 0.1s linear 6s 1 forwards, bgcolorlof 0.1s linear 10.8s 1 reverse forwards;
+  animation: bgcolorlof 0.1s linear 6s forwards, bgcolorlof 0.1s linear 10.8s reverse forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 .Rrow02 .large {
-  animation: bgcolorbo 0.1s linear 6s 1 forwards, bgcolorbo 0.1s linear 10.8s 1 reverse forwards;
+  animation: bgcolorbo 0.1s linear 6s forwards, bgcolorbo 0.1s linear 10.8s reverse forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .Rrow03 {
-  animation: bgcolorof 0.1s linear 11.5s 1 forwards, bgcolorof 0.1s linear 16.3s 1 reverse forwards;
+  animation: bgcolorof 0.1s linear 11.5s forwards, bgcolorof 0.1s linear 16.3s reverse forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 .Rrow03 .large {
-  animation: bgcolorbo 0.1s linear 11.5s 1 forwards, bgcolorbo 0.1s linear 16.3s 1 reverse forwards;
+  animation: bgcolorbo 0.1s linear 11.5s forwards, bgcolorbo 0.1s linear 16.3s reverse forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .Rrow04 {
-  animation: bgcolorlof 0.1s linear 17s 1 forwards, bgcolorlof 0.1s linear 21.8s 1 reverse forwards;
+  animation: bgcolorlof 0.1s linear 17s forwards, bgcolorlof 0.1s linear 21.8s reverse forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 .Rrow04 .large {
-  animation: bgcolorbo 0.1s linear 17s 1 forwards, bgcolorbo 0.1s linear 21.8s 1 reverse forwards;
+  animation: bgcolorbo 0.1s linear 17s forwards, bgcolorbo 0.1s linear 21.8s reverse forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .Rrow05 {
-  animation: bgcolorlof 0.1s linear 22.5s 1 forwards, bgcolorlof 0.1s linear 27.3s 1 reverse forwards;
+  animation: bgcolorlof 0.1s linear 22.5s forwards, bgcolorlof 0.1s linear 27.3s reverse forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 .Rrow05 .large {
-  animation: bgcolorbo 0.1s linear 22.5s 1 forwards, bgcolorbo 0.1s linear 27.3s 1 reverse forwards;
+  animation: bgcolorbo 0.1s linear 22.5s forwards, bgcolorbo 0.1s linear 27.3s reverse forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .R01no, .R01price {
-  animation: colorfo 0.1s linear 0.5s 1 forwards, colorfo 0.1s linear 5.3s 1 reverse forwards;
+  animation: colorfo 0.1s linear 0.5s forwards, colorfo 0.1s linear 5.3s reverse forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .R01moneysign {
-  animation: colorbo 0.1s linear 0.5s 1 forwards, colorbo 0.1s linear 5.3s 1 reverse forwards;
+  animation: colorbo 0.1s linear 0.5s forwards, colorbo 0.1s linear 5.3s reverse forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .R02no, .R02price {
-  animation: colorfo 0.1s linear 6s 1 forwards, colorfo 0.1s linear 10.8s 1 reverse forwards;
+  animation: colorfo 0.1s linear 6s forwards, colorfo 0.1s linear 10.8s reverse forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .R02moneysign {
-  animation: colorbo 0.1s linear 6s 1 forwards, colorbo 0.1s linear 10.8s 1 reverse forwards;
+  animation: colorbo 0.1s linear 6s forwards, colorbo 0.1s linear 10.8s reverse forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .R03no, .R03price {
-  animation: colorfo 0.1s linear 11.5s 1 forwards, colorfo 0.1s linear 16.3s 1 reverse forwards;
+  animation: colorfo 0.1s linear 11.5s forwards, colorfo 0.1s linear 16.3s reverse forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .R03moneysign {
-  animation: colorbo 0.1s linear 11.5s 1 forwards, colorbo 0.1s linear 16.3s 1 reverse forwards;
+  animation: colorbo 0.1s linear 11.5s forwards, colorbo 0.1s linear 16.3s reverse forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .R04no, .R04price {
-  animation: colorfo 0.1s linear 17s 1 forwards, colorfo 0.1s linear 21.8s 1 reverse forwards;
+  animation: colorfo 0.1s linear 17s forwards, colorfo 0.1s linear 21.8s reverse forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .R04moneysign {
-  animation: colorbo 0.1s linear 17s 1 forwards, colorbo 0.1s linear 21.8s 1 reverse forwards;
+  animation: colorbo 0.1s linear 17s forwards, colorbo 0.1s linear 21.8s reverse forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .R05no, .R05price {
-  animation: colorfo 0.1s linear 22.5s 1 forwards, colorfo 0.1s linear 27.3s 1 reverse forwards;
+  animation: colorfo 0.1s linear 22.5s forwards, colorfo 0.1s linear 27.3s reverse forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .R05moneysign {
-  animation: colorbo 0.1s linear 22.5s 1 forwards, colorbo 0.1s linear 27.3s 1 reverse forwards;
+  animation: colorbo 0.1s linear 22.5s forwards, colorbo 0.1s linear 27.3s reverse forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .R01Cname, .R01Ename {
-  animation: filtero 0.05s linear 0.5s 1 forwards, filtero 0.05s linear 5.3s 1 reverse forwards;
+  animation: filtero 0.05s linear 0.5s forwards, filtero 0.05s linear 5.3s reverse forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .R02Cname, .R02Ename {
-  animation: filtero 0.05s linear 6s 1 forwards, filtero 0.05s linear 10.8s 1 reverse forwards;
+  animation: filtero 0.05s linear 6s forwards, filtero 0.05s linear 10.8s reverse forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .R03Cname, .R03Ename {
-  animation: filtero 0.05s linear 11.5s 1 forwards, filtero 0.05s linear 16.3s 1 reverse forwards;
+  animation: filtero 0.05s linear 11.5s forwards, filtero 0.05s linear 16.3s reverse forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .R04Cname, .R04Ename {
-  animation: filtero 0.05s linear 17s 1 forwards, filtero 0.05s linear 21.8s 1 reverse forwards;
+  animation: filtero 0.05s linear 17s forwards, filtero 0.05s linear 21.8s reverse forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .R05Cname, .R05Ename {
-  animation: filtero 0.05s linear 22.5s 1 forwards, filtero 0.05s linear 27.3s 1 reverse forwards;
+  animation: filtero 0.05s linear 22.5s forwards, filtero 0.05s linear 27.3s reverse forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 27s;
 }
 
 .region-selector {
@@ -918,4 +1028,13 @@ body, html {
   margin-left: 10px;
   min-width: 60px;
   text-align: center;
+}
+
+.resolution-info {
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 12px;
+  font-weight: 500;
+  color: #ddd;
 }
