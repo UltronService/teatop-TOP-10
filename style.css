@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+TC:wght@100..900&display=swap");
 body, html {
-  height: 56.25vw;
   width: 100vw;
+  height: 100vh;
   margin: 0;
   margin-left: auto;
   margin-right: auto;
@@ -9,6 +9,7 @@ body, html {
   position: relative;
   overflow: hidden;
   vertical-align: top;
+  aspect-ratio: 16 / 9;
 }
 
 * {
@@ -198,14 +199,14 @@ body, html {
   font-weight: 600;
   margin-bottom: 3px;
   letter-spacing: 1.7px;
-  font-size: clamp(0.5rem, 1.6vw, 1.5rem);
+  font-size: clamp(0.5rem, 1.6vw, 3rem);
 }
 .R .Rrow .Name .REname {
   font-family: "Montserrat";
   font-weight: 600;
   letter-spacing: 0.3px;
   margin-bottom: 0;
-  font-size: clamp(0.3rem, 1.1vw, 1rem);
+  font-size: clamp(0.3rem, 1.1vw, 2rem);
   line-height: 1.2;
 }
 .R .Rrow .Price {
