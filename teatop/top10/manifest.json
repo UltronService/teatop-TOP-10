@@ -1,0 +1,16 @@
+{
+  "name": "Teatop TOP10",
+  "short_name": "TOP10",
+  "description": "Teatop 門市 TOP10 熱銷飲品排行榜",
+  "start_url": "./",
+  "display": "fullscreen",
+  "background_color": "#ffffff",
+  "theme_color": "#ec6f09",
+  "icons": [
+    {
+      "src": "./images/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

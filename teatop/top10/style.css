@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+TC:wght@100..900&display=swap");
+@import url("./fonts.css");
 body, html {
-  height: 56.25vw;
+  height: 100vh;
   width: 100vw;
   margin: 0;
   margin-left: auto;
@@ -242,7 +242,7 @@ body, html {
   display: inline-block;
   width: 8%;
   height: 1.6vw;
-  background-image: url(https://i.imgur.com/jefyVWB.png);
+  background-image: url(./images/icon01.png);
   background-size: 80%;
   background-repeat: no-repeat;
   margin-left: 3px;
@@ -254,7 +254,7 @@ body, html {
   display: inline-block;
   width: 21%;
   height: 1.6vw;
-  background-image: url(https://i.imgur.com/sMPtqn2.png);
+  background-image: url(./images/icon04.png);
   background-size: 80%;
   background-repeat: no-repeat;
   margin-left: 0px;
@@ -266,7 +266,7 @@ body, html {
   display: inline-block;
   width: 6.3%;
   height: 1.6vw;
-  background-image: url(https://i.imgur.com/2v5oNuM.png);
+  background-image: url(./images/icon06.png);
   background-size: 80%;
   background-repeat: no-repeat;
   margin-left: 3px;
@@ -278,7 +278,7 @@ body, html {
   display: inline-block;
   width: 8%;
   height: 1.6vw;
-  background-image: url(https://i.imgur.com/2iKWyLF.png);
+  background-image: url(./images/icon10.png);
   background-size: 80%;
   background-repeat: no-repeat;
   margin-left: 3px;
@@ -302,7 +302,7 @@ body, html {
   display: inline-block;
   width: 21%;
   height: 1.6vw;
-  background-image: url(https://i.imgur.com/oWT18Dm.png);
+  background-image: url(./images/icon09.png);
   background-size: 80%;
   background-repeat: no-repeat;
   margin-left: 0px;
@@ -868,53 +868,4 @@ body, html {
 
 .R05Cname, .R05Ename {
   animation: filtero 0.05s linear 22.5s 1 forwards, filtero 0.05s linear 27.3s 1 reverse forwards;
-}
-
-.region-selector {
-  position: absolute;
-  top: 10px;
-  left: 20px;
-  z-index: 100;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 10px 15px;
-  border-radius: 5px;
-  color: white;
-  font-size: 14px;
-  font-family: "Noto Sans TC";
-}
-
-.region-selector label {
-  font-weight: 600;
-  margin-right: 5px;
-}
-
-.region-selector button {
-  padding: 6px 16px;
-  background: #ec6f09;
-  color: white;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: background 0.3s;
-  font-family: "Noto Sans TC";
-  font-weight: 500;
-  font-size: 13px;
-}
-
-.region-selector button:hover {
-  background: #d85a00;
-}
-
-.region-selector button:active {
-  background: #b84600;
-}
-
-#regionDisplay {
-  font-weight: bold;
-  margin-left: 10px;
-  min-width: 60px;
-  text-align: center;
 }
