@@ -89,25 +89,47 @@ async function checkVersion() {
 // ========== 圖片注入 ==========
 function injectImages() {
   if (typeof IMAGES === 'undefined') {
-    console.error('[APP] 圖片資源未載入');
+    console.warn('[APP] 圖片資源未載入，使用佔位符');
+    injectPlaceholders();
     return;
   }
+  
+  const root = document.documentElement;
+  let successCount = 0;
   
   document.querySelectorAll('[data-img]').forEach((el) => {
     const key = el.dataset.img;
     if (IMAGES[key]) {
       el.src = IMAGES[key];
+      successCount++;
+    } else {
+      console.warn(`[APP] 圖片缺失: ${key}`);
     }
   });
   
-  const root = document.documentElement;
-  root.style.setProperty('--icon-tea', `url("${IMAGES.icon_tea}")`);
-  root.style.setProperty('--icon-bubble', `url("${IMAGES.icon_bubble}")`);
-  root.style.setProperty('--icon-flower', `url("${IMAGES.icon_flower}")`);
-  root.style.setProperty('--icon-passion', `url("${IMAGES.icon_passion}")`);
-  root.style.setProperty('--icon-redbean', `url("${IMAGES.icon_redbean}")`);
+  try {
+    root.style.setProperty('--icon-tea', `url("${IMAGES.icon_tea || 'none'}")`);
+    root.style.setProperty('--icon-bubble', `url("${IMAGES.icon_bubble || 'none'}")`);
+    root.style.setProperty('--icon-flower', `url("${IMAGES.icon_flower || 'none'}")`);
+    root.style.setProperty('--icon-passion', `url("${IMAGES.icon_passion || 'none'}")`);
+    root.style.setProperty('--icon-redbean', `url("${IMAGES.icon_redbean || 'none'}")`);
+  } catch (error) {
+    console.warn('[APP] CSS 變量設置失敗', error);
+  }
   
-  console.log('[APP] 圖片注入完成');
+  console.log(`[APP] 圖片注入完成 (${successCount}/${document.querySelectorAll('[data-img]').length})`);
+}
+
+function injectPlaceholders() {
+  const placeholderSVG = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="100" height="100"%3E%3Crect fill="%23f0f0f0" width="100" height="100"/%3E%3Ctext x="50" y="50" font-size="12" fill="%23999" text-anchor="middle" dy=".3em"%3EImage%3C/text%3E%3C/svg%3E';
+  
+  document.querySelectorAll('[data-img]').forEach((el) => {
+    if (!el.src || el.src === '') {
+      el.src = placeholderSVG;
+    }
+  });
+  
+  console.log('[APP] 佔位符注入完成');
 }
 
 // ========== 動畫生成工具函數 ==========
@@ -292,10 +314,36 @@ function initializeAnimations() {
 async function initApp() {
   console.log(`[APP] Teatop TOP10 啟動中... (v${APP_VERSION})`);
   
-  await checkVersion();
-  registerServiceWorker();
-  injectImages();
-  await loadRegionData();
+  try {
+    await checkVersion();
+  } catch (error) {
+    console.warn('[APP] 版本檢查失敗:', error);
+  }
+  
+  try {
+    registerServiceWorker();
+  } catch (error) {
+    console.warn('[APP] Service Worker 註冊失敗:', error);
+  }
+  
+  try {
+    injectImages();
+  } catch (error) {
+    console.error('[APP] 圖片注入失敗:', error);
+    injectPlaceholders();
+  }
+  
+  try {
+    await loadRegionData();
+  } catch (error) {
+    console.error('[APP] 區域數據載入失敗:', error);
+  }
+  
+  try {
+    initializeAnimations();
+  } catch (error) {
+    console.error('[APP] 動畫初始化失敗:', error);
+  }
   
   console.log('[APP] 啟動完成');
 }
@@ -304,3 +352,12 @@ document.addEventListener('DOMContentLoaded', initApp);
 
 // 暴露全域函數供 HTML 調用
 window.switchRegion = switchRegion;
+
+// 全域錯誤捕捉
+window.addEventListener('error', (event) => {
+  console.error('[APP] 全域錯誤:', event.error);
+});
+
+window.addEventListener('unhandledrejection', (event) => {
+  console.error('[APP] 未處理的 Promise 拒絕:', event.reason);
+});
