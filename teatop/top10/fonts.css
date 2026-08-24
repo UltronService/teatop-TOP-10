@@ -1,0 +1,19 @@
+/* 本地字體定義 */
+@font-face {
+  font-family: "Noto Sans TC";
+  src: url("./fonts/noto-sans-tc.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Funnel Display";
+  src: url("./fonts/funnel-display.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/montserrat.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
