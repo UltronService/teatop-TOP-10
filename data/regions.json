@@ -59,6 +59,20 @@
         { "id": 9, "cn": "轟蜜茶108", "en": "Honey 108 Roasted Oolong Tea with Tea Jelly", "price": 70 },
         { "id": 10, "cn": "紅豆粉粿鮮奶", "en": "Brown Sugar Fresh Milk with Red Bean & Jelly", "price": 95 }
       ]
+    },
+    "test": {
+      "ranking": [
+        { "id": 1, "cn": "108茶王", "en": "108 Roasted Oolong Tea", "price": 50 },
+        { "id": 2, "cn": "招牌高山青", "en": "Taiwan Light Oolong Tea", "price": 40 },
+        { "id": 3, "cn": "青茶3Q", "en": "Light Oolong Tea w/ Bubble, Coconut Jelly & Green Tea Jelly", "price": 55 },
+        { "id": 4, "cn": "黑糖珍珠鮮奶", "en": "Brown Sugar Fresh Milk with Bubble", "price": 85 },
+        { "id": 5, "cn": "當代雙Q", "en": "Bubble Milk Tea with Taro Balls", "price": 70 },
+        { "id": 6, "cn": "桂花凍108", "en": "108 Roasted Oolong with Osmanthus Jelly", "price": 70 },
+        { "id": 7, "cn": "柳橙綠", "en": "Fresh Orange Green Tea", "price": 75 },
+        { "id": 8, "cn": "轟蜜茶108", "en": "Honey 108 Roasted Oolong Tea with Tea Jelly", "price": 70 },
+        { "id": 9, "cn": "紅豆粉粿鮮奶", "en": "Brown Sugar Fresh Milk with Red Bean & Jelly", "price": 95 },
+        { "id": 10, "cn": "百香QQ", "en": "Passion Fruit Green Tea with Bubble & Coconut Jelly", "price": 80 }
+      ]
     }
   },
   "defaultRegion": "台北門市"
