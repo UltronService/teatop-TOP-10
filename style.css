@@ -171,6 +171,7 @@ body, html {
   width: 100%;
   height: 10%;
   padding: 0px 15px 0px 15px;
+  overflow: hidden;
 }
 .R .Rrow .Number {
   display: flex;
@@ -193,21 +194,30 @@ body, html {
   flex-grow: 1;
   margin-left: 8px;
   margin-right: 8px;
+  overflow: hidden;
+  min-width: 0;
 }
 .R .Rrow .Name .RCname {
   font-family: "Montserrat", "Noto Sans TC";
   font-weight: 600;
-  margin-bottom: 3px;
+  margin-bottom: 2px;
   letter-spacing: 1.7px;
-  font-size: clamp(0.5rem, 1.6vw, 3rem);
+  font-size: clamp(0.5rem, 1.4vw, 3rem);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .R .Rrow .Name .REname {
   font-family: "Montserrat";
   font-weight: 600;
   letter-spacing: 0.3px;
   margin-bottom: 0;
-  font-size: clamp(0.3rem, 1.1vw, 2rem);
-  line-height: 1.2;
+  font-size: clamp(0.25rem, 0.9vw, 2rem);
+  line-height: 1.15;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .R .Rrow .Price {
   display: flex;
