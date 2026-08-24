@@ -1,4 +1,30 @@
-@import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+TC:wght@100..900&display=swap");
+/* 字體改用系統字體堆疊（離線優先） */
+:root {
+  --font-display: "Segoe UI", "Microsoft JhengHei", "PingFang TC", sans-serif;
+  --font-sans: "Segoe UI", "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif;
+  --font-mono: "Consolas", "Microsoft JhengHei", monospace;
+  
+  /* 圖片 CSS 變量（由 JavaScript 動態注入） */
+  --icon-tea: none;
+  --icon-bubble: none;
+  --icon-flower: none;
+  --icon-passion: none;
+  --icon-redbean: none;
+}
+
+/* STB 性能優化：GPU 加速 */
+.L .Ltopimg img,
+.L h1.Ltop,
+.L h3.LCname,
+.L p.LEname,
+.L .Lcircle,
+.L .Rcircle,
+.R .Rrow {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
 body, html {
   width: 100vw;
   height: 100vh;
@@ -13,7 +39,7 @@ body, html {
 }
 
 * {
-  font-family: "Noto Sans TC";
+  font-family: var(--font-sans);
   box-sizing: border-box;
 }
 
@@ -86,7 +112,7 @@ body, html {
 }
 .L h1.Ltop {
   color: #ec6f09;
-  font-family: "Funnel Display";
+  font-family: var(--font-display);
   font-weight: 800;
   font-size: clamp(4rem, 18vw, 35rem);
   margin-top: 20px;
@@ -97,7 +123,7 @@ body, html {
   margin-left: 0vw;
 }
 .L h3.LCname {
-  font-family: "Montserrat", "Noto Sans TC";
+  font-family: var(--font-sans);
   margin-bottom: 0;
   letter-spacing: 3px;
   position: absolute;
@@ -115,7 +141,7 @@ body, html {
   left: 50%;
   top: 92%;
   transform: translate(-50%, -50%);
-  font-family: "Montserrat";
+  font-family: var(--font-sans);
   font-weight: 600;
   color: #fff;
   font-size: clamp(0.4rem, 1.2vw, 1rem);
@@ -177,7 +203,7 @@ body, html {
   margin-top: 5px;
 }
 .R .Rrow .Number .Rno {
-  font-family: "Funnel Display";
+  font-family: var(--font-display);
   font-weight: 700;
   letter-spacing: 0.5px;
   white-space: nowrap;
@@ -195,14 +221,14 @@ body, html {
   margin-right: 8px;
 }
 .R .Rrow .Name .RCname {
-  font-family: "Montserrat", "Noto Sans TC";
+  font-family: var(--font-sans);
   font-weight: 600;
   margin-bottom: 3px;
   letter-spacing: 1.7px;
   font-size: clamp(0.5rem, 1.6vw, 3rem);
 }
 .R .Rrow .Name .REname {
-  font-family: "Montserrat";
+  font-family: var(--font-sans);
   font-weight: 600;
   letter-spacing: 0.3px;
   margin-bottom: 0;
@@ -217,19 +243,19 @@ body, html {
   text-align: center;
 }
 .R .Rrow .Price .moneysign {
-  font-family: "Montserrat";
+  font-family: var(--font-sans);
   font-weight: 600;
   margin-bottom: 2px;
   font-size: clamp(0.4rem, 1.2vw, 1rem);
 }
 .R .Rrow .Price .large {
-  font-family: "Montserrat";
+  font-family: var(--font-sans);
   font-weight: 600;
   margin-bottom: 0;
   font-size: clamp(0.2rem, 0.9vw, 0.8rem);
 }
 .R .Rrow .Price .Rprice {
-  font-family: "Funnel Display";
+  font-family: var(--font-display);
   font-weight: 700;
   letter-spacing: 0.5px;
   color: #fff;
@@ -243,7 +269,7 @@ body, html {
   display: inline-block;
   width: 8%;
   height: 1.6vw;
-  background-image: url(https://i.imgur.com/jefyVWB.png);
+  background-image: var(--icon-tea);
   background-size: 80%;
   background-repeat: no-repeat;
   margin-left: 3px;
@@ -255,7 +281,7 @@ body, html {
   display: inline-block;
   width: 21%;
   height: 1.6vw;
-  background-image: url(https://i.imgur.com/sMPtqn2.png);
+  background-image: var(--icon-bubble);
   background-size: 80%;
   background-repeat: no-repeat;
   margin-left: 0px;
@@ -267,7 +293,7 @@ body, html {
   display: inline-block;
   width: 6.3%;
   height: 1.6vw;
-  background-image: url(https://i.imgur.com/2v5oNuM.png);
+  background-image: var(--icon-flower);
   background-size: 80%;
   background-repeat: no-repeat;
   margin-left: 3px;
@@ -279,7 +305,7 @@ body, html {
   display: inline-block;
   width: 8%;
   height: 1.6vw;
-  background-image: url(https://i.imgur.com/2iKWyLF.png);
+  background-image: var(--icon-passion);
   background-size: 80%;
   background-repeat: no-repeat;
   margin-left: 3px;
@@ -303,7 +329,7 @@ body, html {
   display: inline-block;
   width: 21%;
   height: 1.6vw;
-  background-image: url(https://i.imgur.com/oWT18Dm.png);
+  background-image: var(--icon-redbean);
   background-size: 80%;
   background-repeat: no-repeat;
   margin-left: 0px;
@@ -884,7 +910,7 @@ body, html {
   border-radius: 5px;
   color: white;
   font-size: 14px;
-  font-family: "Noto Sans TC";
+  font-family: var(--font-sans);
 }
 
 .region-selector label {
@@ -900,7 +926,7 @@ body, html {
   border-radius: 3px;
   cursor: pointer;
   transition: background 0.3s;
-  font-family: "Noto Sans TC";
+  font-family: var(--font-sans);
   font-weight: 500;
   font-size: 13px;
 }

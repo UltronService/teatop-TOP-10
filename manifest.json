@@ -1,0 +1,27 @@
+{
+  "name": "Teatop TOP10",
+  "short_name": "Teatop",
+  "version": "1.2.0",
+  "lastUpdated": "2026-08-24",
+  "description": "Teatop 茶飲門市 TOP10 熱銷排行榜",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#ffffff",
+  "theme_color": "#ec6f09",
+  "start_url": "./index.html",
+  "scope": "./",
+  "icons": [
+    {
+      "src": "./assets/images.js",
+      "type": "application/javascript",
+      "purpose": "any"
+    }
+  ],
+  "resources": [
+    "index.html",
+    "style.css",
+    "script.js",
+    "assets/images.js",
+    "data/regions.json"
+  ]
+}

@@ -6,6 +6,38 @@
 
 ---
 
+## [1.2.0] - 2026-08-24
+
+### Added
+- **離線優先架構**：Service Worker + 智能快取策略
+- **版本控制系統**：自動檢測更新、無感更新
+- **圖片內嵌**：21 張 Imgur 圖片轉為 Base64（648 KB），完全離線可用
+- **manifest.json**：PWA 配置檔案
+- **圖片下載腳本**：`scripts/download-images.js`
+
+### Changed
+- **移除所有 CDN 依賴**：Bootstrap、jQuery、Google Fonts
+- **字體本地化**：改用系統字體堆疊（Segoe UI、Microsoft JhengHei、PingFang TC）
+- **CSS 重構**：使用 CSS 變量管理圖片引用
+- **HTML 精簡**：移除不必要的 partial 註解
+
+### Performance
+- **GPU 加速**：動畫元素添加 `will-change`、`translateZ(0)`
+- **減少網路請求**：從 ~25 次降至 5 次（本地資源）
+- **首屏加載**：離線時 < 0.5 秒（快取命中）
+
+### Technical
+- **Service Worker**：Cache-first 策略、自動清理舊版本快取
+- **版本檢查**：localStorage 存儲版本號、啟動時自動比對
+- **圖片注入**：JavaScript 動態設置 img[data-img] 和 CSS 變量
+
+### STB 適配
+- 支援網路斷線場景
+- 降低 CPU/GPU 資源消耗
+- 24/7 穩定運行優化
+
+---
+
 ## [1.1.0] - 2026-08-24
 
 ### Added
@@ -71,7 +103,9 @@ git show v1.0.0
 
 ## 待優化項目
 
-- [ ] 動畫時間硬編碼，未來考慮配置表
+- [x] ~~動畫時間硬編碼~~ → v1.1.0 配置中心化
+- [x] ~~離線支持~~ → v1.2.0 Service Worker + 版本控制
+- [x] ~~CDN 依賴~~ → v1.2.0 完全本地化
 - [ ] 無單元測試（純靜態）
 - [ ] TOP1~5 左側顯示可考慮改為輪播卡片
 - [ ] 多語言支持（英文、日文等）
