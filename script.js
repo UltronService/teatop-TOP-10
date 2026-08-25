@@ -210,10 +210,8 @@ async function loadRegionData() {
     if (regionData && regionData.ranking) {
       updateUI(regionData.ranking, region);
     }
-    initializeAnimations();
   } catch (error) {
     console.error('[APP] 載入區域數據失敗:', error);
-    initializeAnimations();
   }
 }
 
@@ -255,6 +253,7 @@ function switchRegion(regionName) {
 let isResetting = false;
 let cachedElements = null;
 let fallbackTimerId = null;
+let animationsInitialized = false;
 
 function initElementCache() {
   const allConfigs = [...ANIMATION_CONFIG.left, ...ANIMATION_CONFIG.right];
@@ -290,12 +289,18 @@ function resetFallbackTimer() {
 }
 
 function initializeAnimations() {
+  if (animationsInitialized) {
+    console.log('[APP] 動畫已初始化，跳過');
+    return;
+  }
+  
   const triggerElement = document.querySelector('.L05Ename');
   if (!triggerElement) {
     console.error('[APP] 找不到 .L05Ename 元素');
     return;
   }
   
+  animationsInitialized = true;
   initElementCache();
   
   triggerElement.addEventListener('animationend', (event) => {

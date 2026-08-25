@@ -12,19 +12,6 @@
   --icon-redbean: none;
 }
 
-/* STB 性能優化：GPU 加速 */
-.L .Ltopimg img,
-.L h1.Ltop,
-.L h3.LCname,
-.L p.LEname,
-.L .Lcircle,
-.L .Rcircle,
-.R .Rrow {
-  will-change: transform, opacity;
-  transform: translateZ(0);
-  backface-visibility: hidden;
-}
-
 body, html {
   width: 100vw;
   height: 100vh;
