@@ -1,0 +1,68 @@
+/* 本地字體定義（離線 fallback） */
+
+/* Funnel Display */
+@font-face {
+  font-family: 'Funnel Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./FunnelDisplay-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Funnel Display';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('./FunnelDisplay-800.woff2') format('woff2');
+}
+
+/* Montserrat */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./Montserrat-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('./Montserrat-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./Montserrat-Bold.woff2') format('woff2');
+}
+
+/* Noto Sans TC（基礎子集） */
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./NotoSansTC-400.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('./NotoSansTC-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./NotoSansTC-700.woff2') format('woff2');
+}

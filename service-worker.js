@@ -3,7 +3,7 @@
  * 離線優先快取策略 + 自動版本更新
  */
 
-const CACHE_VERSION = 'v1.2.0';
+const CACHE_VERSION = 'v1.2.1';
 const CACHE_NAME = `teatop-${CACHE_VERSION}`;
 
 const ASSETS_TO_CACHE = [
@@ -13,7 +13,16 @@ const ASSETS_TO_CACHE = [
   './script.js',
   './assets/images.js',
   './data/regions.json',
-  './manifest.json'
+  './manifest.json',
+  './fonts/fonts.css',
+  './fonts/FunnelDisplay-700.woff2',
+  './fonts/FunnelDisplay-800.woff2',
+  './fonts/Montserrat-Regular.woff2',
+  './fonts/Montserrat-SemiBold.woff2',
+  './fonts/Montserrat-Bold.woff2',
+  './fonts/NotoSansTC-400.woff2',
+  './fonts/NotoSansTC-600.woff2',
+  './fonts/NotoSansTC-700.woff2'
 ];
 
 self.addEventListener('install', (event) => {
